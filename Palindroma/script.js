@@ -14,9 +14,6 @@ if (nome == nomeReverse) {
   console.log("il nome non è palindromo");
 }
 
-
-
-
 function reverseString(str) {
   // Step 1. Use the split() method to return a new array
     var splitString = str.split(""); // var splitString = "hello".split("");
@@ -37,8 +34,23 @@ function reverseString(str) {
 
 
 
+// tentativo 2 senza utilizzo di array
 
 
+var nomeContrario = "";
+
+for (var i = nome.length - 1; i >= 0 ; i--) {
+  nomeContrario += nome[i];
+}
+
+console.log(nomeContrario);
+
+if (nome == nomeContrario) {
+  console.log("il nome è palindromo");
+
+}else {
+  console.log("il nome non è palindromo");
+}
 
 
 // var nomeDritto = [];
