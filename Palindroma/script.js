@@ -37,11 +37,7 @@ function reverseString(str) {
 // tentativo 2 senza utilizzo di array
 
 
-var nomeContrario = "";
-
-for (var i = nome.length - 1; i >= 0 ; i--) {
-  nomeContrario += nome[i];
-}
+var nomeContrario = ReverseString2(nome);
 
 console.log(nomeContrario);
 
@@ -52,7 +48,13 @@ if (nome == nomeContrario) {
   console.log("il nome non è palindromo");
 }
 
-
+function ReverseString2(string) {
+  var nomeContrario = "";
+  for (var i = string.length - 1; i >= 0 ; i--) {
+    nomeContrario += string[i];
+  }
+  return nomeContrario
+}
 // var nomeDritto = [];
 // var nomeReverse = [];
 // // tratto la parola come un array e cerco di invertirne l'ordine
